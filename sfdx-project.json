@@ -2,11 +2,19 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "default": true,
+      "package": "Formstack Example",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "versionDescription": ""
     }
   ],
   "name": "formstack",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "59.0"
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "Formstack Example": "0HoPK000000003F0AQ",
+    "Formstack Example@0.1.0-1": "04tPK000000Rk6nYAC"
+  }
 }

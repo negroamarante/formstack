@@ -1,18 +1,19 @@
-# Salesforce DX Project: Next Steps
+# Technical exercise
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This repo has the code for the technical exercise
 
-## How Do You Plan to Deploy Your Changes?
+## There is an Unlocked Package to be used that can be installed
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Package Id: "04tPK000000Rk6nYAC"
 
-## Configure Your Salesforce DX Project
+Script to use the package
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Create a no namespace scratch org
 
-## Read All About It
+Install the package
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+```
+sf org create scratch -m -a FormStackDeveloper -e developer
+
+sf package install --package "Formstack Example@0.1.0-1" --target-org FormStackDeveloper --wait 10 --publish-wait 10
+```
